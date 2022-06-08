@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,600;0,700;0,900;1,100&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
+    <title>Landing page</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <header class="container p-4">
+      <nav class="navbar navbar-expand-lg">
+        <!-- el expand hace falta para que se vea los elementos de la lista -->
+        <img
+          src="./Imagenes/logo-bookmark.svg"
+          alt="logo"
+          class="float-start"
+        />
+        <div class="collapse navbar-collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item" href="#">
+              <a class="nav-link">FEATURES</a>
+            </li>
+            <li class="nav-item" href="#">
+              <a class="nav-link">PRICING</a>
+            </li>
+            <li class="nav-item" href="#">
+              <a class="nav-link">CONTACT</a>
+            </li>
+            <li class="nav-item" href="#">
+              <button type="button" class="btn btn-secondary text-white">LOGIN</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container p-4 mt-5">
+      <!-- ojo al margen y al padding, igual luego hay q cambiarlos, pero de momento apaña -->
+      <div class="row">
+        <!-- TÍTULO primer bloque de texto e imagen -->
+        <div class="col-12 col-lg-6">
+          <h1>TÍTULO</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            quos ratione, esse pariatur eligendi architecto aliquid natus eos
+            consectetur tempora odio harum ipsum dolores neque accusantium
+            praesentium ea. Architecto, numquam.
+          </p>
+          <button type="button" class="btn btn-primary">chrome</button>
+          <button type="button" class="btn btn-light">firefox</button>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <!-- <div class="bakground-figure"></div> -->
+          <img
+            src="./Imagenes/illustration-hero.svg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+
+        <!-- FEATURES bloque de texto centrado ESTE ESTÁ BIEN PUEDE SER REFERENCIA-->
+        <div class="row">
+          <div class="col-12 mt-5">
+            <div class="d-flex justify-content-center">
+              <!-- en d-flex está la clave!! -->
+              <h3>FEATURES</h3>
+            </div>
+          </div>
+
+          <div class="col-12 mt-3">
+            <div class="d-flex justify-content-center px-5 mx-5">
+              <!-- divide y vencerás, creo... -->
+              <p class="text-center">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis laborum iure modi autem veniam nostrum similique
+                eos, itaque, porro corrupti animi! Non assumenda, odit iste
+                ipsam error dolorem iure officiis.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- tabs -->
+        <div class="row">
+          <ul class="nav nav-tabs my-5">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Simple Bookmarking</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Speedy Searching</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Easy Sharing</a>
+            </li>
+          </ul>
+        </div>
+        <!-- para cambiar el diseño, nos metemos en el sass q da la documentación -->
+      </div>
+
+      <!-- BOOKMARK segundo bloque con imagen y texto -->
+      <div class="row my-5">
+        <div class="col-12 col-lg-6">
+          <img
+            src="./Imagenes/illustration-features-tab-1.svg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <h3>Bookmark in one click</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            perspiciatis impedit suscipit illo qui modi blanditiis ab, aliquid
+            veritatis, vel architecto deleniti magni expedita autem quam
+            similique! Commodi, at voluptates.
+          </p>
+          <button type="button" class="btn btn-primary">More Info</button>
+        </div>
+      </div>
+
+      <!-- DOWNLOAD texto centrado -->
+      <div class="row">
+        <div class="col-12 mt-5">
+          <div class="d-flex justify-content-center">
+            <h3>Download the extension</h3>
+          </div>
+          <div class="col-12 mt-3">
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur iusto id ab dolorum earum itaque laborum hic eos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- cards con los logos de los navegadores -->
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="card card-border-primary text-center">
+            <!-- poniendo aquí el text-center, centra todo el contenido escrito -->
+            <img
+              src="./Imagenes/logo-chrome.svg"
+              alt="google chrome"
+              class="card-img-center p-5"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Add to Chrome</h5>
+              <p class="card-text">Lorem ipsum</p>
+              <img src="./Imagenes/bg-dots.svg" alt="" class="card-img" />
+              <button type="button" class="btn btn-primary">
+                Add & Intall Extension
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="card card-border-primary text-center">
+            <img
+              src="./Imagenes/logo-firefox.svg"
+              alt="firefox"
+              class="card-img-center p-5"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Add to Firefox</h5>
+              <p class="card-text">Lorem ipsum</p>
+              <img src="./Imagenes/bg-dots.svg" alt="" class="card-img" />
+              <button type="button" class="btn btn-primary">
+                Add & Intall Extension
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4">
+          <div class="card card-border-primary text-center">
+            <img
+              src="./Imagenes/logo-opera.svg"
+              alt="opera"
+              class="card-img-center p-5"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Add to Opera</h5>
+              <p class="card-text">Lorem Ipsum</p>
+              <img src="./Imagenes/bg-dots.svg" alt="" class="card-img" />
+              <button type="button" class="btn btn-primary">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Frequently Ask Questions -->
+      <div class="row">
+        <div class="col-12 mt-5">
+          <div class="d-flex justify-content-center">
+            <h3>Frecuently Ask Questions</h3>
+          </div>
+        </div>
+
+        <div class="col-12 mt-3">
+          <div class="d-flex justify-content-center px-5 mx-5">
+            <p class="text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus eum quae iusto nemo. Et doloribus temporibus quasi
+              ea, odio esse minus tenetur architecto non ipsum saepe eos autem
+              debitis accusantium.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACORDEÓN -->
+        
+      <!-- <div class="accordion-item" id="headingTwo">
+          <h5 class="accordion-header" id="headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-controls="collapseTwo"
+            >
+              How can I request a new browser?
+            </button>
+          </h5>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingTwo"
+            data-bs-parent="#accordionFAQ"
+          >
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+              tempora a modi unde, natus doloribus corporis rem amet odit
+              voluptate aspernatur! Minima doloremque quas sequi similique nobis
+              ipsam earum beatae?
+            </div>
+          </div>
+        </div> -->
+
+        <!-- UP-TO-DATE bloque azul de abajo -->
+        <div class="row bg-primary">
+          <div class="col-12">
+            <div class="d-flex justify-content-center text-white">
+              <p class="text-center">35.000 ALREADY JOINED</p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="d-flex justify-content-center">
+              <h5 class="text-center text-white">Stay up-to-date with what we're doing</h5>
+            </div>
+          </div>
+        </div>
+
+    </main>
+  </body>
+</html>

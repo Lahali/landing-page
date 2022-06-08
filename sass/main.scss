@@ -1,0 +1,21 @@
+$primary: #5265E1;
+$secondary: #FA5959;
+$success:  #f6b013;
+$info:   #842cec;
+$warning:   #24d1d0; 
+$danger: #0c347e;
+$light: #ebecec;
+
+
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+.background-figure {
+    width: 200px;
+    height: 100px;
+    border-radius: 50% 0 0 50%;
+    background-color: $primary
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+

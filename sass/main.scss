@@ -6,9 +6,18 @@ $warning:   #24d1d0;
 $danger: #0c347e;
 $light: #ebecec;
 
-
+$card-border-width: 0;               
+$card-border-radius: 5%;
 
 $font-family-sans-serif: 'Roboto', sans-serif;
+
+.card-text {
+    color: grey;
+}
+
+.text {
+    color: grey;
+}
 
 .background-figure {
     width: 200px;

@@ -9,6 +9,18 @@ $light: #ebecec;
 $card-border-width: 0;               
 $card-border-radius: 5%;
 
+.card-img-center {
+    width: 100px;
+    height: 100px;
+}
+
+$nav-link-hover-color: $secondary;
+$nav-link-color: grey;
+
+$nav-tabs-border-color: grey;
+$nav-tabs-link-hover-border-color: white;
+$nav-tabs-link-active-border-color: white;
+
 $font-family-sans-serif: 'Roboto', sans-serif;
 
 .card-text {

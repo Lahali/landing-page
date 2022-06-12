@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,600;0,700;0,900;1,100&family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./sass/main.css" />
     <title>Landing page</title>
   </head>
@@ -18,14 +19,24 @@
   <body>
     <!-- navbar -->
     <header class="container p-4">
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-md navbar-light">
         <!-- el expand hace falta para que se vea los elementos de la lista -->
         <img
           src="./Imagenes/logo-bookmark.svg"
           alt="logo"
           class="float-start"
         />
-        <div class="collapse navbar-collapse justify-content-end">
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#opcions"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="opcions">
           <ul class="navbar-nav">
             <li class="nav-item mx-2" href="#">
               <a class="nav-link">FEATURES</a>
@@ -49,11 +60,12 @@
     <main class="container mt-5">
       <!-- ojo al margen y al padding, igual luego hay q cambiarlos, pero de momento apaña -->
 
-
       <!-- TÍTULO primer bloque de texto e imagen -->
       <div class="row m-1">
-        <div class="col-12 col-lg-6 order-2">
-          <h1 class="text-center text-lg-start mb-4">A Simple Bookmark Manager</h1>
+        <div class="col-12 col-lg-6 order-last order-lg-first">
+          <h1 class="text-center text-lg-start mb-4">
+            A Simple Bookmark Manager
+          </h1>
 
           <p class="text text-center text-lg-start mb-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
@@ -71,13 +83,14 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-6 order-1">
-          <!-- <div class="bakground-figure"></div> -->
-          <img
-            src="./Imagenes/illustration-hero.svg"
-            class="img-fluid"
-            alt=""
-          />
+        <div class="col-12 col-lg-6 order-first order-lg-last">
+          <div class="background-figure">
+            <img
+              src="./Imagenes/illustration-hero.svg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
         </div>
       </div>
       <!-- FEATURES bloque de texto centrado ESTE ESTÁ BIEN PUEDE SER REFERENCIA-->
@@ -104,7 +117,7 @@
 
       <!-- TABS -->
       <div class="row">
-        <ul class="nav nav-tabs justify-content-center my-5">
+        <ul class="nav nav- justify-content-center my-5">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#"
               >Simple Bookmarking</a
@@ -265,13 +278,15 @@
             </div>
           </div>
         </div> -->
+    </main>
 
-      <!-- UP-TO-DATE bloque azul de abajo -->
+    <footer>
+      <!--FOOTER UP-TO-DATE bloque azul de abajo -->
       <div class="row bg-primary d-flex justify-content-center">
-        <div class="col-12">
+        <div class="col-12 p-3 mt-3">
           <p class="text-center text-white">35.000 ALREADY JOINED</p>
         </div>
-        <div class="col-12">
+        <div class="col-12 p-3 mx-3">
           <h5 class="text-center text-white">
             Stay up-to-date with what we're doing
           </h5>
@@ -292,13 +307,11 @@
           </div>
         </div>
       </div>
-
-      <!-- FOOTER -->
-      <footer class="container bg-danger">
-        <nav class="navbar-expand-lg">
+      <nav class="navbar navbar-dark bg-danger">
+        <div class="container">
           <img src="./Imagenes/logo-bookmark.svg" alt="" />
-        </nav>
-      </footer>
-    </main>
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>

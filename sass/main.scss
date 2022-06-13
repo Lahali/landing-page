@@ -6,13 +6,15 @@ $warning:   #24d1d0;
 $danger: #0c347e;
 $light: #ebecec;
 
+// $btn-hover-bg-shade-amount:       15% !default;
+// $btn-hover-bg-tint-amount:        0% !default;
+// $btn-hover-border-shade-amount:   20% !default;
+// $btn-hover-border-tint-amount:    100% !default;
+
+
 $card-border-width: 0;               
 $card-border-radius: 5%;
 
-.card-img-center {
-    width: 100px;
-    height: 100px;
-}
 
 
 $navbar-light-color: grey;               
@@ -23,15 +25,18 @@ $navbar-light-toggler-border-color: white;
 $nav-link-color: grey;
 $nav-link-hover-color: $secondary;
 
- 
 
 $nav-tabs-border-color: grey;
 $nav-tabs-link-hover-border-color: white;
 $nav-tabs-link-active-border-color: white;
 
 
-
 $font-family-sans-serif: 'Roboto', sans-serif;
+
+.card-img-center {
+    width: 100px;
+    height: 100px;
+}
 
 
 .card-text {
@@ -40,15 +45,57 @@ $font-family-sans-serif: 'Roboto', sans-serif;
 
 .text {
     color: grey;
+    max-width: 450px;
 }
 
 
 .background-figure {
     background-color: $primary;
-    min-width: 225px;
-    min-height: 125px;
+    width: 150rem;
+    height: 50rem;
     border-radius: 20rem 0 0 20rem;
+    max-height: 80%;
+    max-width: 90%;
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    left: 20%;
 }
+
+.background-figure-left {
+    background-color: $primary;
+    width: 150rem;
+    height: 50rem;
+    border-radius: 0 20rem 20rem 0;
+    max-height: 80%;
+    max-width: 90%;
+    position: absolute;
+    z-index: -1;
+    right: 20%;
+    bottom: -10%;
+}
+
+.hero-parent {
+    position: relative;
+}
+
+.bookmarking-tab {
+    position: relative;
+}
+
+.img {
+    display: flex;
+    max-width: 90%;
+    height: auto;
+}
+
+.tab-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 

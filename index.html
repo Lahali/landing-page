@@ -18,8 +18,8 @@
 
   <body>
     <!-- navbar -->
-    <header class="container p-4">
-      <nav class="navbar navbar-expand-md navbar-light">
+    <header class="container overflow-hidden">
+      <nav class="navbar navbar-expand-md navbar-light my-4 mx-1">
         <!-- el expand hace falta para que se vea los elementos de la lista -->
         <img
           src="./Imagenes/logo-bookmark.svg"
@@ -56,24 +56,23 @@
         </div>
       </nav>
     </header>
-
-    <main class="container mt-5">
-      <!-- ojo al margen y al padding, igual luego hay q cambiarlos, pero de momento apaña -->
-
-      <!-- TÍTULO primer bloque de texto e imagen -->
-      <div class="row m-1">
-        <div class="col-12 col-lg-6 order-last order-lg-first">
-          <h1 class="text-center text-lg-start mb-4">
+    <main>
+      <!-- INICIO -->
+      <div class="row mt-5">
+        <div class="col-12 col-lg-6 col-md-6 order-last order-lg-first">
+          <h1 class="text-center text-lg-start text-md-center ms-lg-5">
             A Simple Bookmark Manager
           </h1>
 
-          <p class="text text-center text-lg-start mb-4">
+          <p class="text text-center text-lg-start text-md-center mx-5 my-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
             quos ratione, esse pariatur eligendi architecto aliquid natus eos
             consectetur tempora.
           </p>
 
-          <div class="col d-flex justify-content-center mb-5">
+          <div
+            class="col d-flex justify-content-lg-start justify-content-center mx-5 mb-5"
+          >
             <button type="button" class="btn btn-primary m-2 shadow">
               Get it on Chrome
             </button>
@@ -83,28 +82,29 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-6 order-first order-lg-last">
-          <div class="background-figure">
-            <img
-              src="./Imagenes/illustration-hero.svg"
-              class="img-fluid"
-              alt=""
-            />
-          </div>
+        <div
+          class="col-12 col-lg-6 order-first order-lg-last hero-parent mb-5 overflow-hidden"
+        >
+          <img
+            src="./Imagenes/illustration-hero.svg"
+            class="img-fluid"
+            alt=""
+            id="img-hero"
+          />
+          <div class="background-figure"></div>
         </div>
       </div>
-      <!-- FEATURES bloque de texto centrado ESTE ESTÁ BIEN PUEDE SER REFERENCIA-->
-      <div class="row mt-5">
+
+      <!-- FEATURES -->
+      <div class="row">
         <div class="col-12 mt-5">
           <div class="d-flex justify-content-center">
-            <!-- en d-flex está la clave!! -->
             <h3>Features</h3>
           </div>
         </div>
 
         <div class="col-12 mt-3">
-          <div class="d-flex justify-content-center px-lg-5 mx-lg-5">
-            <!-- divide y vencerás, creo... -->
+          <div class="d-flex justify-content-center">
             <p class="text text-center">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis laborum iure modi autem veniam nostrum similique eos,
@@ -117,201 +117,174 @@
 
       <!-- TABS -->
       <div class="row">
-        <ul class="nav nav- justify-content-center my-5">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"
-              >Simple Bookmarking</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Speedy Searching</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Easy Sharing</a>
-          </li>
-        </ul>
-      </div>
-      <!-- para cambiar el diseño, nos metemos en el sass q da la documentación -->
-
-      <!-- BOOKMARK segundo bloque con imagen y texto -->
-      <div class="row my-5">
-        <div class="col-12 col-lg-6">
-          <img
-            src="./Imagenes/illustration-features-tab-1.svg"
-            alt=""
-            class="img-fluid"
-          />
-        </div>
-
-        <div class="col-12 col-lg-6">
-          <h3>Bookmark in one click</h3>
-          <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-            perspiciatis impedit suscipit illo qui modi blanditiis ab, aliquid
-            veritatis, vel architecto deleniti magni expedita autem quam
-            similique! Commodi, at voluptates.
-          </p>
-          <button type="button" class="btn btn-primary shadow">
-            More Info
-          </button>
-        </div>
-      </div>
-
-      <!-- DOWNLOAD texto centrado -->
-      <div class="row">
-        <div class="col-12 mt-5">
-          <div class="d-flex justify-content-center">
-            <h3>Download the extension</h3>
-          </div>
-          <div class="col-12 mt-3">
-            <p class="text text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consequatur iusto id ab dolorum earum itaque laborum hic eos.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARDS con los logos de los navegadores -->
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-3 m-3">
-          <div class="card card-border-primary text-center shadow">
-            <!-- poniendo aquí el text-center, centra todo el contenido escrito -->
-            <div class="card-body">
-              <img
-                src="./Imagenes/logo-chrome.svg"
-                alt="google chrome"
-                class="img-fluid card-img-center"
-              />
-              <h5 class="card-title mt-4">Add to Chrome</h5>
-              <p class="card-text">Lorem ipsum</p>
-              <img src="./Imagenes/bg-dots.svg" alt="" class="card-img" />
-              <button type="button" class="btn btn-primary shadow my-3">
-                Add & Install Extension
+        <nav>
+          <ul class="nav nav-tabs justify-content-center mt-5">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="bookmarking"
+                data-bs-toggle="tab"
+                data-bs-target="#bookmarking-tab"
+                type="button"
+                role="tab"
+                aria-controls="bookmarking"
+                aria-selected="true"
+              >
+                Simple Bookmarking
               </button>
-            </div>
-          </div>
-        </div>
+            </li>
 
-        <div class="col-12 col-lg-3 m-3">
-          <div class="card card-border-primary text-center shadow">
-            <div class="card-body">
-              <img
-                src="./Imagenes/logo-firefox.svg"
-                alt="firefox"
-                class="img-fluid card-img-center"
-              />
-              <h5 class="card-title mt-4">Add to Firefox</h5>
-              <p class="card-text">Lorem ipsum</p>
-              <img src="./Imagenes/bg-dots.svg" alt="" class="card-img" />
-              <button type="button" class="btn btn-primary shadow my-3">
-                Add & Install Extension
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="searching"
+                data-bs-toggle="tab"
+                data-bs-target="#speedy-searching-tab"
+                type="button"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+              >
+                Speedy Searching
               </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-lg-3 m-3">
-          <div class="card card-border-primary text-center shadow">
-            <div class="card-body">
-              <img
-                src="./Imagenes/logo-opera.svg"
-                alt="opera"
-                class="img-fluid card-img-center"
-              />
-              <h5 class="card-title mt-4">Add to Opera</h5>
-              <p class="card-text">Lorem Ipsum</p>
-              <img src="./Imagenes/bg-dots.svg" alt="" class="card-img" />
-              <button type="button" class="btn btn-primary shadow my-3">
-                Add & Install Extension
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="easy-sharing"
+                data-bs-toggle="tab"
+                data-bs-target="#share-tab"
+                type="button"
+                role="tab"
+                aria-controls="share-tab"
+                aria-selected="false"
+              >
+                Easy Sharing
               </button>
-            </div>
-          </div>
-        </div>
-      </div>
+            </li>
+          </ul>
+        </nav>
 
-      <!-- FAQ Frequently Ask Questions -->
-      <div class="row">
-        <div class="col-12 mt-5">
-          <div class="d-flex justify-content-center">
-            <h3>Frecuently Ask Questions</h3>
-          </div>
-        </div>
-
-        <div class="col-12 mt-3">
-          <div class="d-flex justify-content-center px-5 mx-5">
-            <p class="text text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus eum quae iusto nemo. Et doloribus temporibus quasi
-              ea, odio esse minus tenetur architecto non ipsum saepe eos autem
-              debitis accusantium.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- ACORDEÓN -->
-
-      <!-- <div class="accordion-item" id="headingTwo">
-          <h5 class="accordion-header" id="headingTwo">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo"
-              aria-controls="collapseTwo"
-            >
-              How can I request a new browser?
-            </button>
-          </h5>
+        <div class="tab-content" id="nav-tabContent">
+          <!-- PRIMER PANEL -->
           <div
-            id="collapseTwo"
-            class="accordion-collapse collapse"
-            aria-labelledby="headingTwo"
-            data-bs-parent="#accordionFAQ"
+            class="tab-pane fade show active"
+            id="bookmarking-tab"
+            role="tabpanel"
+            aria-labelledby="nav-bookmarking-tab"
           >
-            <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-              tempora a modi unde, natus doloribus corporis rem amet odit
-              voluptate aspernatur! Minima doloremque quas sequi similique nobis
-              ipsam earum beatae?
+            <div class="row mt-5">
+              <div class="col-12 col-lg-5 bookmarking-tab overflow-hidden">
+                <img
+                  src="./Imagenes/illustration-features-tab-1.svg"
+                  alt=""
+                  class="img m-5 p-4"
+                />
+                <div class="background-figure-left"></div>
+              </div>
+
+              <div class="col-lg-1"></div>
+
+              <div class="col-12 col-md-12 col-lg-5 mt-5 p-3">
+                <h3 class="text-center text-md-center text-lg-start">
+                  Bookmark in one click
+                </h3>
+                <p class="text text-center text-md-center text-lg-start">
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favorite sites.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary shadow d-sm-none d-md-none d-lg-block"
+                >
+                  More Info
+                </button>
+              </div>
             </div>
           </div>
-        </div> -->
+          <!-- SEGUNDO PANEL -->
+          <div
+            class="tab-pane fade"
+            id="speedy-searching-tab"
+            role="tabpanel"
+            aria-labelledby="speedy-searching"
+          >
+            <div class="row mt-5">
+              <div class="col-12 col-lg-5 bookmarking-tab overflow-hidden">
+                <img
+                  src="./Imagenes/illustration-features-tab-2.svg"
+                  alt=""
+                  class="img m-5 p-4"
+                />
+                <div class="background-figure-left"></div>
+              </div>
+
+              <div class="col-lg-1"></div>
+
+              <div class="col-12 col-lg-5 mt-5 p-3">
+                <h3 class="text-center text-lg-start">Intelligent Search</h3>
+                <p class="text text-center text-lg-start">
+                  Our powerful search feature will help you find saved sites in
+                  no time at all. No need to trawl through all of your
+                  bookmarks.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary shadow d-sm-none d-md-none d-lg-block"
+                >
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- TERCER PANEL -->
+          <div
+            class="tab-pane fade"
+            id="share-tab"
+            role="tabpanel"
+            aria-labelledby="share"
+          >
+            <div class="row mt-5">
+              <div class="col-12 col-lg-5 bookmarking-tab overflow-hidden">
+                <img
+                  src="./Imagenes/illustration-features-tab-3.svg"
+                  alt=""
+                  class="img m-5 p-4"
+                />
+                <div class="background-figure-left"></div>
+              </div>
+
+              <div class="col-lg-1"></div>
+
+              <div class="col-12 col-lg-5 mt-5 p-3">
+                <h3 class="text-center text-lg-start">Easy Sharing</h3>
+                <p class="text text-center text-lg-start">
+                  Easily share your bookmarks and collections with otres. Create
+                  a shareable link that you can send at the click of a button.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary shadow d-sm-none d-md-none d-lg-block"
+                >
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOWNLOAD -->
+      <div class="row"></div>
+
+      <!-- FAQ -->
+      <div class="row"></div>
     </main>
 
-    <footer>
-      <!--FOOTER UP-TO-DATE bloque azul de abajo -->
-      <div class="row bg-primary d-flex justify-content-center">
-        <div class="col-12 p-3 mt-3">
-          <p class="text-center text-white">35.000 ALREADY JOINED</p>
-        </div>
-        <div class="col-12 p-3 mx-3">
-          <h5 class="text-center text-white">
-            Stay up-to-date with what we're doing
-          </h5>
-        </div>
-        <div class="row mx-3 my-3 justify-content-center">
-          <div class="col-12 col-lg-4">
-            <input
-              type="email"
-              class="form-control"
-              id="usersEmail"
-              placeholder="Enter your email address"
-            />
-          </div>
-          <div class="col-12 col-lg-2 justify-content-center">
-            <button type="button" class="btn btn-secondary text-white shadow">
-              Contact Us
-            </button>
-          </div>
-        </div>
-      </div>
-      <nav class="navbar navbar-dark bg-danger">
-        <div class="container">
-          <img src="./Imagenes/logo-bookmark.svg" alt="" />
-        </div>
-      </nav>
-    </footer>
+    <!-- FOOTER -->
+    <footer></footer>
   </body>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </html>

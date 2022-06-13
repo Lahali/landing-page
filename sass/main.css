@@ -9,13 +9,54 @@
 
 .text {
   color: grey;
+  max-width: 450px;
 }
 
 .background-figure {
   background-color: #5265E1;
-  min-width: 225px;
-  min-height: 125px;
+  width: 150rem;
+  height: 50rem;
   border-radius: 20rem 0 0 20rem;
+  max-height: 80%;
+  max-width: 90%;
+  position: absolute;
+  z-index: -1;
+  top: 20%;
+  left: 20%;
+}
+
+.background-figure-left {
+  background-color: #5265E1;
+  width: 150rem;
+  height: 50rem;
+  border-radius: 0 20rem 20rem 0;
+  max-height: 80%;
+  max-width: 90%;
+  position: absolute;
+  z-index: -1;
+  right: 20%;
+  bottom: -10%;
+}
+
+.hero-parent {
+  position: relative;
+}
+
+.bookmarking-tab {
+  position: relative;
+}
+
+.img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 90%;
+  height: auto;
+}
+
+.tab-content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /*!

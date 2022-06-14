@@ -6,20 +6,14 @@ $warning:   #24d1d0;
 $danger: #0c347e;
 $light: #ebecec;
 
-// $btn-hover-bg-shade-amount:       15% !default;
-// $btn-hover-bg-tint-amount:        0% !default;
-// $btn-hover-border-shade-amount:   20% !default;
-// $btn-hover-border-tint-amount:    100% !default;
-
 
 $card-border-width: 0;               
 $card-border-radius: 5%;
 
 
-
 $navbar-light-color: grey;               
 $navbar-light-hover-color: $secondary;
-$navbar-light-toggler-border-color: white;
+$navbar-light-toggler-border-color: none;
 
 
 $nav-link-color: grey;
@@ -27,11 +21,21 @@ $nav-link-hover-color: $secondary;
 
 
 $nav-tabs-border-color: grey;
-$nav-tabs-link-hover-border-color: white;
-$nav-tabs-link-active-border-color: white;
+$nav-tabs-link-hover-border-color: none;
+$nav-tabs-link-active-border-color: none;
 
 
 $font-family-sans-serif: 'Roboto', sans-serif;
+
+$accordion-button-icon: url("./../Imagenes/icon-arrow.svg");
+
+.btn {
+    white-space: nowrap;
+}
+
+.navigation {
+    white-space: nowrap;
+}
 
 .card-img-center {
     width: 100px;
@@ -48,6 +52,9 @@ $font-family-sans-serif: 'Roboto', sans-serif;
     max-width: 450px;
 }
 
+.tab-text {
+    color: grey;
+}
 
 .background-figure {
     background-color: $primary;
@@ -65,21 +72,21 @@ $font-family-sans-serif: 'Roboto', sans-serif;
 .background-figure-left {
     background-color: $primary;
     width: 150rem;
-    height: 50rem;
+    height: 100rem;
     border-radius: 0 20rem 20rem 0;
     max-height: 80%;
     max-width: 90%;
     position: absolute;
     z-index: -1;
     right: 20%;
-    bottom: -10%;
+    bottom: 0;
 }
 
 .hero-parent {
     position: relative;
 }
 
-.bookmarking-tab {
+.tab-parent {
     position: relative;
 }
 
@@ -94,6 +101,10 @@ $font-family-sans-serif: 'Roboto', sans-serif;
     margin-bottom: 2rem;
 }
 
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-bottom: solid $secondary 0.5rem;
+}
 
 
 

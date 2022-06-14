@@ -174,7 +174,7 @@
             aria-labelledby="nav-bookmarking-tab"
           >
             <div class="row mt-5">
-              <div class="col-12 col-lg-5 bookmarking-tab overflow-hidden">
+              <div class="col-12 col-lg-5 tab-parent overflow-hidden">
                 <img
                   src="./Imagenes/illustration-features-tab-1.svg"
                   alt=""
@@ -186,17 +186,19 @@
               <div class="col-lg-1"></div>
 
               <div class="col-12 col-md-12 col-lg-5 mt-5 p-3">
-                <h3 class="text-center text-md-center text-lg-start">
+                <h3 class="text-center text-md-center text-lg-start px-sm-3">
                   Bookmark in one click
                 </h3>
-                <p class="text text-center text-md-center text-lg-start">
+                <p
+                  class="tab-text text-center text-md-center text-lg-start px-sm-3"
+                >
                   Organize your bookmarks however you like. Our simple
                   drag-and-drop interface gives you complete control over how
                   you manage your favorite sites.
                 </p>
                 <button
                   type="button"
-                  class="btn btn-primary shadow d-sm-none d-md-none d-lg-block"
+                  class="btn btn-primary shadow d-none d-lg-block"
                 >
                   More Info
                 </button>
@@ -211,7 +213,7 @@
             aria-labelledby="speedy-searching"
           >
             <div class="row mt-5">
-              <div class="col-12 col-lg-5 bookmarking-tab overflow-hidden">
+              <div class="col-12 col-lg-5 tab-parent overflow-hidden">
                 <img
                   src="./Imagenes/illustration-features-tab-2.svg"
                   alt=""
@@ -223,15 +225,17 @@
               <div class="col-lg-1"></div>
 
               <div class="col-12 col-lg-5 mt-5 p-3">
-                <h3 class="text-center text-lg-start">Intelligent Search</h3>
-                <p class="text text-center text-lg-start">
+                <h3 class="text-center text-lg-start px-sm-3">
+                  Intelligent Search
+                </h3>
+                <p class="tab-text text-center text-lg-start px-sm-3">
                   Our powerful search feature will help you find saved sites in
                   no time at all. No need to trawl through all of your
                   bookmarks.
                 </p>
                 <button
                   type="button"
-                  class="btn btn-primary shadow d-sm-none d-md-none d-lg-block"
+                  class="btn btn-primary shadow d-none d-lg-block"
                 >
                   More Info
                 </button>
@@ -247,7 +251,7 @@
             aria-labelledby="share"
           >
             <div class="row mt-5">
-              <div class="col-12 col-lg-5 bookmarking-tab overflow-hidden">
+              <div class="col-12 col-lg-5 tab-parent overflow-hidden">
                 <img
                   src="./Imagenes/illustration-features-tab-3.svg"
                   alt=""
@@ -259,14 +263,14 @@
               <div class="col-lg-1"></div>
 
               <div class="col-12 col-lg-5 mt-5 p-3">
-                <h3 class="text-center text-lg-start">Easy Sharing</h3>
-                <p class="text text-center text-lg-start">
+                <h3 class="text-center text-lg-start px-sm-3">Easy Sharing</h3>
+                <p class="tab-text text-center text-lg-start px-sm-3">
                   Easily share your bookmarks and collections with otres. Create
                   a shareable link that you can send at the click of a button.
                 </p>
                 <button
                   type="button"
-                  class="btn btn-primary shadow d-sm-none d-md-none d-lg-block"
+                  class="btn btn-primary shadow d-sm-none d-lg-block"
                 >
                   More Info
                 </button>
@@ -277,14 +281,266 @@
       </div>
 
       <!-- DOWNLOAD -->
-      <div class="row"></div>
+      <div class="row">
+        <!-- TEXT PART -->
+        <div class="d-flex justify-content-lg-center">
+          <div class="col-12 my-5 justify-items-lg-center">
+            <div class="text-center px-sm-3">
+              <h3>Download the extension</h3>
+            </div>
+            <div class="d-flex">
+              <div class="col-12 mt-3">
+                <p class="tab-text text-center px-sm-3">
+                  We've got more browsers in the pipeline. Please do let us know
+                  if you've got a favourite you'd like us to prioritize.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CARDS -->
+      <!-- CHROME -->
+      <div class="row justify-content-center">
+        <div class="col-sm-5 col-lg-4 align-self-lg-start mx-auto px-5 py-2">
+          <div class="card card-border-primary text-center shadow">
+            <div class="card-body">
+              <img
+                src="./Imagenes/logo-chrome.svg"
+                alt="google chrome"
+                class="img-fluid card-img-center"
+              />
+              <h5 class="card-title mt-4">Add to Chrome</h5>
+              <p class="card-text">Lorem ipsum</p>
+              <img src="./Imagenes/bg-dots.svg" alt="" class="card-img" />
+              <button type="button" class="btn btn-primary shadow my-3">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIREFOX -->
+        <div class="col-sm-5 col-lg-4 align-self-lg-center mx-auto px-5 py-2">
+          <div class="card card-border-primary text-center shadow">
+            <div class="card-body">
+              <img
+                src="./Imagenes/logo-firefox.svg"
+                alt="firefox"
+                class="img-fluid card-img-center"
+              />
+              <h5 class="card-title mt-4">Add to Firefox</h5>
+              <p class="card-text">Lorem ipsum</p>
+              <img src="./Imagenes/bg-dots.svg" alt="" class="card-img" />
+              <button type="button" class="btn btn-primary shadow my-3">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- OPERA -->
+        <div class="col-sm-5 col-lg-4 align-self-lg-end mx-auto px-5 py-2">
+          <div class="card card-border-primary text-center shadow">
+            <div class="card-body">
+              <img
+                src="./Imagenes/logo-opera.svg"
+                alt="opera"
+                class="img-fluid card-img-center"
+              />
+              <h5 class="card-title mt-4">Add to Opera</h5>
+              <p class="card-text">Lorem Ipsum</p>
+              <img src="./Imagenes/bg-dots.svg" alt="" class="card-img" />
+              <button type="button" class="btn btn-primary shadow my-3">
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- FAQ -->
-      <div class="row"></div>
+      <div class="row">
+        <div class="col-12 mt-5">
+          <div class="d-flex justify-content-center">
+            <h3>Frecuently Ask Questions</h3>
+          </div>
+        </div>
+
+        <div class="col-12 mt-3">
+          <div class="d-flex justify-content-center px-5 mx-5">
+            <p class="tab-text text-center">
+              Here are some of our FAQs. If you have any other questions you'd
+              like answered please feel free to email us.
+            </p>
+          </div>
+        </div>
+
+        <!-- acordeon -->
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8 d-flex justify-content-center">
+            <div class="accordion w-100 px-5" id="accordionFAQ">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="whatIsBookmark">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    What is Bookmark?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionFAQ"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Atque vero doloribus sint blanditiis voluptates animi,
+                      laudantium suscipit ad, distinctio tempore beatae rerum
+                      maxime illo esse? Dolore in quas omnis quis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="howRequest">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    How can I request a new Browser?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionFAQ"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Repellendus animi quaerat ut, facilis nemo eaque porro
+                      laudantium corporis rem ratione totam quia sapiente nobis
+                      tenetur aspernatur dicta cupiditate nisi eos!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="mobile">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Is there a mobile app?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionFAQ"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fuga tempora culpa eos, voluptate ex illum tempore, quis
+                      quibusdam corrupti sapiente at ea deleniti, consequatur
+                      sint incidunt labore cupiditate sit ut.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="chromium">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    What about other Chromium browsers?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionFAQ"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Fuga tempora culpa eos, voluptate ex illum tempore, quis
+                      quibusdam corrupti sapiente at ea deleniti, consequatur
+                      sint incidunt labore cupiditate sit ut.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2"></div>
+        </div>
+        <div class="col d-flex justify-content-center m-5">
+
+          <button type="button" class="btn btn-primary shadow">More Info</button>
+        </div>
+
+      </div>
     </main>
 
     <!-- FOOTER -->
-    <footer></footer>
+    <footer class="overflow-hidden mt-5">
+      <div class="row bg-primary d-flex justify-content-center py-2">
+        <div class="col-12 p-3 mt-3">
+          <p class="text-center text-white">35.000 ALREADY JOINED</p>
+        </div>
+        <div class="col-12 p-3 mx-3">
+          <h5 class="text-center text-white">
+            Stay up-to-date with what we're doing
+          </h5>
+        </div>
+        <div class="row m-3 justify-content-center">
+          <div class="col-4">
+            <input
+              type="email"
+              class="form-control"
+              id="usersEmail"
+              placeholder="Enter your email address"
+            />
+          </div>
+          <div class="col-3 justify-content-center">
+            <button type="button" class="btn btn-secondary text-white shadow">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-danger p-3">
+        <div class="container">
+          <img src="./Imagenes/logo-bookmark.svg" alt="" />
+        </div>
+      </nav>
+    </footer>
   </body>
   <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </html>
